@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">tle2_app</string>
-    <string name="welkom_bij_evi">Welkom bij EVI</string>
+    <string name="start_string">Welkom bij EVI</string>
 </resources>

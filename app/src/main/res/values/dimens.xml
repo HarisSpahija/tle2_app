@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_layout_width">365dp</dimen>
+    <dimen name="activity_layout_height">340dp</dimen>
+
+    <dimen name="activity_textSize_start">100sp</dimen>
+    <dimen name="activity_textSize_activity">40sp</dimen>
+
+</resources>
