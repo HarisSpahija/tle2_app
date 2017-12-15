@@ -12,9 +12,16 @@
 
     <!--Placeholder strings-->
     <string name="weight_placeholder">Vul hier je gewicht in (in kg)</string>
-    <string name="length_placeholder">Vul hier je gewicht in (in cm)</string>
+    <string name="length_placeholder">Vul hier je lengte in (in cm)</string>
     <string name="name_placeholder">Naam</string>
-    <string name="password_placeholder">Wachtwoord</string>
+    <string name="age_placeholder">Leeftijd</string>
+
+    <!--Toast strings-->
+    <string name="noNameText">U heeft geen naam ingevuld</string>
+    <string name="noAgeText">U heeft geen leeftijd ingevuld</string>
+    <string name="noGenderText">U heeft geen geslacht geselecteerd</string>
+    <string name="noHeightText">U heeft geen lengte ingevuld</string>
+    <string name="noWeightText">U heeft geen gewicht ingevuld</string>
 
     <!--Test data-->
     <string name="TextViewTest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n
@@ -23,7 +30,6 @@
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="BMITest">20.5</string>
     <string name="lengthTest">180</string>
-
 
 
 </resources>
