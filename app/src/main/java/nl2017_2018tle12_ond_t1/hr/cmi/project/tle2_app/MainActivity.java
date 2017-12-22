@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             // Create an intent and start the HomeActivity
             Intent homeIntent = new Intent(this, HomeActivity.class);
+            homeIntent.putExtra("activity", 2117);
             startActivity(homeIntent);
         }
 

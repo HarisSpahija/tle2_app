@@ -85,6 +85,7 @@ public class InstallRegistrationActivity extends AppCompatActivity implements Co
 
             Intent bmiCalcIntent = new Intent(this, InstallBMICalculationActivity.class);
             bmiCalcIntent.putExtra("userData", data);
+            bmiCalcIntent.putExtra("activity", 1091);
             startActivity(bmiCalcIntent);
         }
     }

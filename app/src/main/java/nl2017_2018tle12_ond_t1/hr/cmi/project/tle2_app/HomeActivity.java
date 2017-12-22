@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
 
         // TODO: Hardcoded data, user profile not available yet.
         this.target = 1800;
-        this.activity_today = 1801;
+        this.activity_today = getIntent().getIntExtra("activity", 1091);
         this.goal_sprite = findViewById(R.id.goal_icon_false);
 
         this.goal_today = (this.activity_today - target) > 0;
