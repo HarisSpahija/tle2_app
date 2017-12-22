@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtBMI" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnBMIConfirm"
         android:layout_width="110dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"

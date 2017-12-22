@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".InstallRegistrationActivity" />
+        <activity android:name=".InstallBMICalculationActivity" />
+        <activity android:name=".InstallBMIConfirmActivity" />
         <activity android:name=".HomeActivity" />
     </application>
 

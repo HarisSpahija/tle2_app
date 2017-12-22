@@ -33,5 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent homeIntent = new Intent(this, HomeActivity.class);
             startActivity(homeIntent);
         }
+
+        finish();
     }
 }

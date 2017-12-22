@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import java.util.HashMap;
+
 /**
  * Created by HAL9000 on 11-12-2017.
  */
@@ -54,7 +56,7 @@ public class InstallRegistrationActivity extends AppCompatActivity implements Co
     @Override
     public void onClick(View view) {
         String name;
-        int age;
+        String age;
         String gender;
 
         // Send a toast message if one of the fields is not filled in
@@ -67,7 +69,7 @@ public class InstallRegistrationActivity extends AppCompatActivity implements Co
         } else {
             // Save the data
             name = this.txtName.getText().toString();
-            age = Integer.parseInt(this.txtAge.getText().toString());
+            age = this.txtAge.getText().toString();
 
             if (this.btnMale.isChecked()) {
                 gender = "male";
@@ -76,6 +78,14 @@ public class InstallRegistrationActivity extends AppCompatActivity implements Co
             }
 
             // TODO: Implement saving of data and go to questionnaire
+            HashMap<String, String> data = new HashMap<>();
+            data.put("name", name);
+            data.put("age", age);
+            data.put("gender", gender);
+
+            Intent bmiCalcIntent = new Intent(this, InstallBMICalculationActivity.class);
+            bmiCalcIntent.putExtra("userData", data);
+            startActivity(bmiCalcIntent);
         }
     }
 }
