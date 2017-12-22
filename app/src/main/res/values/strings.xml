@@ -3,6 +3,9 @@
 
     <!--Content strings-->
     <string name="start_string">Welkom bij EVI</string>
+    <string name="date">19 Dec</string>
+    <string name="goal_message_false">Je hebt deze dag niet genoeg bewogen.</string>
+    <string name="goal_message_true">Je hebt deze dag voldoende bewogen.</string>
 
     <!--Button strings-->
     <string name="gender_female">Vrouw</string>
