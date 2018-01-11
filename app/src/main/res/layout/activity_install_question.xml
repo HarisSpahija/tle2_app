@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/QuestionDescription1"
+            android:layout_width="260dp"
+            android:layout_height="93dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="Blah blah we gaan aantal vragen stellen"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="vraag 1"
+            app:layout_constraintEnd_toEndOf="@+id/QuestionDescription1"
+            app:layout_constraintStart_toStartOf="@+id/QuestionDescription1"
+            app:layout_constraintTop_toTopOf="@+id/QuestionDescription1"
+            app:layout_constraintBottom_toBottomOf="@+id/QuestionDescription1"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <TextView
+            android:id="@+id/Question2"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/Question1"
+            app:layout_constraintStart_toStartOf="@+id/Question1"
+            app:layout_constraintTop_toTopOf="@+id/Question1"
+            app:layout_constraintBottom_toBottomOf="@+id/Question1"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <TextView
+            android:id="@+id/Question3"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/Question2"
+            app:layout_constraintEnd_toEndOf="@+id/Question2"
+            app:layout_constraintStart_toStartOf="@+id/Question2"
+            app:layout_constraintTop_toTopOf="@+id/Question2"
+            app:layout_constraintVertical_bias="0.491" />
+        <TextView
+            android:id="@+id/Question4"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/Question3"
+            app:layout_constraintBottom_toBottomOf="@+id/Question3"
+            app:layout_constraintEnd_toEndOf="@+id/Question3"
+            app:layout_constraintStart_toStartOf="@+id/Question3"
+            tools:layout_editor_absoluteY="460dp" />
+        <TextView
+            android:id="@+id/Question5"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/Question4"
+            app:layout_constraintBottom_toBottomOf="@+id/Question4"
+            app:layout_constraintEnd_toEndOf="@+id/Question4"
+            app:layout_constraintStart_toStartOf="@+id/Question4"
+            tools:layout_editor_absoluteY="560dp" />
+        <TextView
+            android:id="@+id/Question6"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/Question5"
+            app:layout_constraintBottom_toBottomOf="@+id/Question5"
+            app:layout_constraintEnd_toEndOf="@+id/Question5"
+            app:layout_constraintStart_toStartOf="@+id/Question5"
+            tools:layout_editor_absoluteY="660dp" />
+        <TextView
+            android:id="@+id/Question7"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/Question6"
+            app:layout_constraintBottom_toBottomOf="@+id/Question6"
+            app:layout_constraintEnd_toEndOf="@+id/Question6"
+            app:layout_constraintStart_toStartOf="@+id/Question6"
+            tools:layout_editor_absoluteY="760dp" />
+        <TextView
+            android:id="@+id/Question8"
+            android:layout_width="260dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/Question7"
+            app:layout_constraintBottom_toBottomOf="@+id/Question7"
+            app:layout_constraintEnd_toEndOf="@+id/Question7"
+            app:layout_constraintStart_toStartOf="@+id/Question7"
+            tools:layout_editor_absoluteY="860dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
