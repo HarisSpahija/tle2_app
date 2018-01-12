@@ -6,29 +6,29 @@
     <string name="date">19 Dec</string>
     <string name="goal_message_false">Je hebt deze dag niet genoeg bewogen.</string>
     <string name="goal_message_true">Je hebt deze dag voldoende bewogen.</string>
-    <string name="fysical_age_string">Uw fysieke leeftijd van deze week is: </string>
-    <string name="question_intro">Om een zo goed mogelijk advies te geven stellen wij u een paar vragen, probeer deze met eerlijkheid te beantwoorden.</string>
+    <string name="fysical_age_string">Je fysieke leeftijd van deze week is: </string>
+    <string name="question_intro">Om een zo goed mogelijk advies te geven stellen wij je een paar vragen, probeer deze met eerlijkheid te beantwoorden.</string>
 
     <!--Question strings-->
     <!--Questions-->
-    <string name="questions_question1">Kan je de krant lezen?</string>
-    <string name="questions_question2">Hoe vaak in de week kijkt u tv?</string>
-    <string name="questions_question3">Welke sport beoefent u?</string>
+    <string name="questions_question1">Kun je de krant lezen?</string>
+    <string name="questions_question2">Hoe vaak in de week kijk je tv?</string>
+    <string name="questions_question3">Welke sport beoefen je?</string>
     <string name="questions_question4">Hoe vaak sport je wekelijks?</string>
-    <string name="questions_question5">Hoe vaak ontbijt je?(weekelijks)</string>
-    <string name="questions_question6">Rijdt je nog zelfstandig op de fiets?</string>
-    <string name="questions_question7">Hoe vaak fiets u in de week?</string>
+    <string name="questions_question5">Hoe vaak ontbijt je wekelijks?</string>
+    <string name="questions_question6">Rijd je nog zelfstandig op de fiets?</string>
+    <string name="questions_question7">Hoe vaak fiets je in de week?</string>
 
     <!--Tips-->
     <string name="alert_tip1">Laat de krant eens liggen en ga iets anders doen!</string>
-    <string name="alert_tip2">Ga is buiten een rondje lopen!</string>
+    <string name="alert_tip2">Ga eens buiten een rondje lopen!</string>
     <string name="alert_tip3">Probeer eens minder tv te kijken en iets anders te doen!</string>
-    <string name="alert_tip4">Maak is een wandeling</string>
-    <string name="alert_tip5">Ga is wat vaker naar de </string>
+    <string name="alert_tip4">Maak eens een wandeling</string>
+    <string name="alert_tip5">Ga eens wat vaker naar de </string>
     <string name="alert_tip6">Stop eens wat meer tijd in het beoefenen van </string>
-    <string name="alert_tip7">Ontbijt is de belangrijkste maaltijd van de dag, zorg dat dit dus ook niet overslaat.</string>
-    <string name="alert_tip8">Ga weer is een rondje fietsen!</string>
-    <string name="alert_tip9">Loop buiten is een rondje!</string>
+    <string name="alert_tip7">Ontbijt is de belangrijkste maaltijd van de dag, zorg dat je dit dus ook niet overslaat.</string>
+    <string name="alert_tip8">Ga weer eens een rondje fietsen!</string>
+    <string name="alert_tip9">Loop buiten eens een rondje!</string>
     <string name="alert_tip10">Probeer eens een derde keer te fietsen!</string>
 
     <!--Button strings-->
@@ -50,11 +50,12 @@
     <string name="sport_placeholder">Bijv. Voetbal, Tennis, Zwemmen</string>s
 
     <!--Toast strings-->
-    <string name="noNameText">U heeft geen naam ingevuld</string>
-    <string name="noAgeText">U heeft geen leeftijd ingevuld</string>
-    <string name="noGenderText">U heeft geen geslacht geselecteerd</string>
-    <string name="noHeightText">U heeft geen lengte ingevuld</string>
-    <string name="noWeightText">U heeft geen gewicht ingevuld</string>
+    <string name="noNameText">Je hebt geen naam ingevuld</string>
+    <string name="noAgeText">Je hebt geen leeftijd ingevuld</string>
+    <string name="noGenderText">Je hebt geen geslacht geselecteerd</string>
+    <string name="noHeightText">Je hebt geen lengte ingevuld</string>
+    <string name="noWeightText">Je hebt geen gewicht ingevuld</string>
+    <string name="questionMissedText">Je hebt één of meer van de vragen niet beantwoord</string>
 
     <!--Test data-->
     <string name="TextViewTest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n

@@ -7,202 +7,159 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/QuestionDescription1"
+            android:id="@+id/txtQuestionDescription"
             android:layout_width="350dp"
             android:layout_height="180dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="30dp"
             android:text="@string/question_intro"
+            android:textAlignment="center"
             android:textSize="25sp"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/Question1"
+            android:id="@+id/txtQuestion1"
             android:layout_width="260dp"
             android:layout_height="35dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
-            android:gravity="center"
             android:text="@string/questions_question1"
+            android:textAlignment="center"
             android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="@+id/QuestionDescription1"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="@+id/QuestionDescription1"
-            app:layout_constraintTop_toBottomOf="@+id/QuestionDescription1" />
+            app:layout_constraintEnd_toEndOf="@+id/txtQuestionDescription"
+            app:layout_constraintStart_toStartOf="@+id/txtQuestionDescription"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestionDescription" />
+
+        <ToggleButton
+            android:id="@+id/btnQuestion1Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ToggleButton"
+            android:textOff="@string/yes"
+            android:textOn="@string/yes"
+            app:layout_constraintStart_toStartOf="@+id/txtQuestion1"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion1" />
+
+        <ToggleButton
+            android:id="@+id/btnQuestion1No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ToggleButton"
+            android:textOff="@string/no"
+            android:textOn="@string/no"
+            app:layout_constraintEnd_toEndOf="@+id/txtQuestion1"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion1" />
 
         <TextView
-            android:id="@+id/Question2"
+            android:id="@+id/txtQuestion2"
             android:layout_width="260dp"
             android:layout_height="70dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:gravity="center"
             android:text="@string/questions_question2"
+            android:textAlignment="center"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/btnQuestion1Yes" />
 
-        <TextView
-            android:id="@+id/Question3"
-            android:layout_width="260dp"
-            android:layout_height="70dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/questions_question3"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-        <TextView
-            android:id="@+id/Question4"
-            android:layout_width="260dp"
-            android:layout_height="70dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/questions_question4"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-        <TextView
-            android:id="@+id/Question5"
-            android:layout_width="260dp"
-            android:layout_height="75dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/questions_question5"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-        <TextView
-            android:id="@+id/Question6"
-            android:layout_width="260dp"
-            android:layout_height="70dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/questions_question6"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
-
-        <TextView
-            android:id="@+id/Question7"
-            android:layout_width="260dp"
-            android:layout_height="70dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/questions_question7"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText3" />
-
-        <Button
-            android:id="@+id/button"
-            android:text="@string/yes"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="@+id/Question1"
-            app:layout_constraintTop_toBottomOf="@+id/Question1" />
-
-        <Button
-            android:id="@+id/button2"
-            android:text="@string/no"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="@+id/Question1"
-            app:layout_constraintTop_toTopOf="@+id/button" />
-
-        <Button
-            android:id="@+id/button3"
-            android:text="@string/tv_answer1"
-
+        <ToggleButton
+            android:id="@+id/btnQuestion2Sometimes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/button4"
+            android:layout_marginTop="8dp"
+            android:text="ToggleButton"
+            android:textOff="@string/tv_answer2"
+            android:textOn="@string/tv_answer2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion2" />
+
+        <ToggleButton
+            android:id="@+id/btnQuestion2Never"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="ToggleButton"
+            android:textOff="@string/tv_answer1"
+            android:textOn="@string/tv_answer1"
+            app:layout_constraintEnd_toStartOf="@+id/btnQuestion2Sometimes"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/QuestionDescription1"
-            app:layout_constraintTop_toTopOf="@+id/button4" />
+            app:layout_constraintStart_toStartOf="@+id/txtQuestionDescription"
+            app:layout_constraintTop_toTopOf="@+id/btnQuestion2Sometimes" />
 
-        <Button
-            android:id="@+id/button4"
-            android:text="@string/tv_answer2"
-
+        <ToggleButton
+            android:id="@+id/btnQuestion2Often"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Question2" />
-
-        <Button
-            android:id="@+id/button5"
-            android:text="@string/tv_answer3"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/QuestionDescription1"
+            android:text="ToggleButton"
+            android:textOff="@string/tv_answer3"
+            android:textOn="@string/tv_answer3"
+            app:layout_constraintEnd_toEndOf="@+id/txtQuestionDescription"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="@+id/button4" />
+            app:layout_constraintStart_toEndOf="@+id/btnQuestion2Sometimes"
+            app:layout_constraintTop_toTopOf="@+id/btnQuestion2Sometimes" />
+
+        <TextView
+            android:id="@+id/txtQuestion3"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/questions_question3"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnQuestion2Sometimes" />
 
         <EditText
-            android:id="@+id/editText"
-            android:inputType="textPersonName"
-            android:text="@string/sport_placeholder"
-
+            android:id="@+id/inputQuestion3"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
+            android:hint="@string/sport_placeholder"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Question3" />
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion3" />
+
+        <TextView
+            android:id="@+id/txtQuestion4"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/questions_question4"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputQuestion3" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/inputQuestion4"
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
@@ -212,35 +169,90 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Question4" />
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion4" />
 
-        <Button
-            android:id="@+id/button6"
-            android:text="Button"
+        <TextView
+            android:id="@+id/txtQuestion5"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/questions_question5"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputQuestion4" />
 
+        <EditText
+            android:id="@+id/inputQuestion5"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion5" />
+
+        <TextView
+            android:id="@+id/txtQuestion6"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/questions_question6"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputQuestion5" />
+
+        <ToggleButton
+            android:id="@+id/btnQuestion6Yes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
+            android:textOff="@string/yes"
+            android:textOn="@string/yes"
+            app:layout_constraintEnd_toEndOf="@+id/btnQuestion1Yes"
+            app:layout_constraintStart_toStartOf="@+id/btnQuestion1Yes"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion6" />
 
-            app:layout_constraintEnd_toEndOf="@+id/button"
-            app:layout_constraintStart_toStartOf="@+id/button"
-            app:layout_constraintTop_toBottomOf="@+id/Question6" />
-
-        <Button
-            android:id="@+id/button7"
-            android:text="Button"
-
+        <ToggleButton
+            android:id="@+id/btnQuestion6No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            android:layout_marginTop="8dp"
+            android:textOff="@string/no"
+            android:textOn="@string/no"
+            app:layout_constraintEnd_toEndOf="@+id/btnQuestion1No"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toTopOf="@+id/button6" />
+            app:layout_constraintStart_toStartOf="@+id/btnQuestion1No"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion6" />
+
+        <TextView
+            android:id="@+id/txtQuestion7"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/questions_question7"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnQuestion6Yes" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/inputQuestion7"
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
@@ -249,22 +261,8 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Question5" />
-
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="75dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Question7" />
+            app:layout_constraintTop_toBottomOf="@+id/txtQuestion7" />
 
         <Button
             android:id="@+id/btnQuestionConfirm"
@@ -278,7 +276,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText4" />
+            app:layout_constraintTop_toBottomOf="@+id/inputQuestion7" />
 
     </android.support.constraint.ConstraintLayout>
+
 </ScrollView>
