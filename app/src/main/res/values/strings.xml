@@ -9,6 +9,10 @@
     <string name="fysical_age_string">Uw fysieke leeftijd van deze week is: </string>
     <string name="question_intro">Om een zo goed mogelijk advies te geven stellen wij u een paar vragen, probeer deze met eerlijkheid te beantwoorden.</string>
 
+    <!--Notification messages-->
+    <string name="notif_daily">Je resultaat van vandaag staat klaar!</string>
+    <string name="notif_weekly">Je rapport voor deze week staat klaar!</string>
+
     <!--Question strings-->
     <!--Questions-->
     <string name="questions_question1">Kan je de krant lezen?</string>
