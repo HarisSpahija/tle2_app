@@ -1,9 +1,25 @@
 package nl2017_2018tle12_ond_t1.hr.cmi.project.tle2_app;
 
+
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+
+import android.graphics.Color;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.app.Notification;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -12,10 +28,28 @@ public class HomeActivity extends AppCompatActivity {
     private boolean goal_today;
     private ImageView goal_sprite;
 
+    NotificationHelper helper;
+    Button dailyNotificationButton;
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //Notification Creation
+        helper = new NotificationHelper(this);
+        dailyNotificationButton = (Button)findViewById(R.id.dailyNotificationButton);
+
+        dailyNotificationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = getString(R.string.notif_title);
+                String content = getString(R.string.notif_daily);
+                Notification.Builder builder = helper.getEVIChannelNotification(title,content);
+                helper.getManager().notify(new Random().nextInt(),builder.build());
+            }
+        });
 
         // TODO: Hardcoded data, user profile not available yet.
         this.target = 1800;

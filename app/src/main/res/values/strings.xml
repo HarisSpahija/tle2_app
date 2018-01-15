@@ -10,6 +10,7 @@
     <string name="question_intro">Om een zo goed mogelijk advies te geven stellen wij je een paar vragen, probeer deze met eerlijkheid te beantwoorden.</string>
 
     <!--Notification messages-->
+    <string name="notif_title">EVI</string>
     <string name="notif_daily">Je resultaat van vandaag staat klaar!</string>
     <string name="notif_weekly">Je rapport voor deze week staat klaar!</string>
 
