@@ -3,8 +3,11 @@ package nl2017_2018tle12_ond_t1.hr.cmi.project.tle2_app;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Build;
@@ -47,11 +50,20 @@ public class NotificationHelper extends ContextWrapper {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public Notification.Builder getEVIChannelNotification(String title, String body)
     {
+        Intent homeIntent = new Intent(this, HomeActivity.class);
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+
+        stackBuilder.addParentStack(HomeActivity.class);
+        stackBuilder.addNextIntent(homeIntent);
+
+        PendingIntent homePendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+
         return new Notification.Builder(getApplicationContext(),EVI_CHANNEL_ID)
                 .setContentText(body)
                 .setContentTitle(title)
                 .setSmallIcon(R.mipmap.ic_launcher_round)
-                .setAutoCancel(true);
+                .setAutoCancel(true)
+                .setContentIntent(homePendingIntent);
     }
 
 }
