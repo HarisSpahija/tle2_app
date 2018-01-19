@@ -39,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //Notification Creation
         helper = new NotificationHelper(this);
-        dailyNotificationButton = (Button)findViewById(R.id.dailyNotificationButton);
+        dailyNotificationButton = findViewById(R.id.dailyNotificationButton);
 
         dailyNotificationButton.setOnClickListener(new View.OnClickListener() {
             @Override

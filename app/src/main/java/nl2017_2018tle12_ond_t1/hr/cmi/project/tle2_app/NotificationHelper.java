@@ -3,6 +3,7 @@ package nl2017_2018tle12_ond_t1.hr.cmi.project.tle2_app;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.graphics.BitmapFactory;
